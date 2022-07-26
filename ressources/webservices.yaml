@@ -1,3 +1,4 @@
+apiVersion: v1
 kind: Pod
 metadata:
   name: webservices
@@ -29,9 +30,9 @@ spec:
   - http:
       paths:
       - pathType: Prefix
-        path: "/baeldung"
+        path: "/javacream"
         backend:
           service:
-            name: baeldung-service
+            name: webservicesservice
             port:
-              number: 5678
+              number: 8080
