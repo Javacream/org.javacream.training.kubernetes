@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: webservicesservice
+spec:
+  selector:
+    app: javacream
+  ports:
+  - port: 8080
+
+---
+
+kind: Pod
+metadata:
+  name: webservices
+  labels:
+    name: javacream
+spec:
+  containers:
+  - image: javacream/webservices:1.0
+    name: webservices
+    ports:
+      - containerPort: 8080

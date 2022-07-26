@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: webservicesservice
+spec:
+  selector:
+    app: javacream
+  ports:
+  - port: 8080
+
