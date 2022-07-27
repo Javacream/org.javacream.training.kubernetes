@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: webservices
   labels:
-    name: javacream
+    app: javacream
 spec:
   containers:
   - image: javacream/webservices:1.0
