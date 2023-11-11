@@ -1,10 +1,6 @@
 # org.javacream.training.kubernetes
 
-* Referent: Rainer Sawitzki, eMail: training@rainer-sawitzki.de
-
-* Beispiele
-  * https://github.com/Javacream/org.javacream.training.kubernetes
-    *  Branch vector_25.7.2022
+* Referent: Rainer Sawitzki, eMail: rainer.sawitzki@gmail.com
     
 * Seminarzeiten
   * 12 Unterrichtseinheiten mit jeweils etwa 90 Minuten
@@ -13,5 +9,4 @@
   * Mittagspause 45’ 12:15-13:00
 
 
-* Digitales Flipchart
-  * https://docs.google.com/presentation/d/1gOBr8XDxXm-ZEyqs090_EnSFYwZOR6UNxj-1s1jfPhM/edit?usp=sharing
+* [Digitales Flipchart](https://docs.google.com/presentation/d/1hGmuwNXSH8-a9r0aARhwWVXDofPgI19H7_i1kGM0MTw/edit?usp=sharing)
