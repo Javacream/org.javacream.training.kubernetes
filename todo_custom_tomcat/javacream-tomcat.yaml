@@ -1,0 +1,8 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: javacream-tomcat-pod
+spec:
+  containers:
+  - name: tomcat-container
+    image: javacream/tomcat:1.0
