@@ -8,8 +8,6 @@
 
 * kubectl apply -f webapps.yml
 
-* kubectl port-forward javacream-tomcat-pod 9090:8080
-
 ## check
 * kubectl get pods
 * kubectl port-forward <pod> 8080:8080
