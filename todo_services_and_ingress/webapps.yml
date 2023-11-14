@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webapp-1-0
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: webapp-1-0-pod
+  template:
+    metadata:
+      labels:
+        app: webapp-1-0-pod
+    spec:
+      containers:
+      - name: webapp-1-0-pod
+        image: javacream/webapp:1.0
+        ports:
+        - containerPort: 8080
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webapp-1-1
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: webapp-1-1-pod
+  template:
+    metadata:
+      labels:
+        app: webapp-1-1-pod
+    spec:
+      containers:
+      - name: webapp-1-1-pod
+        image: javacream/webapp:1.1
+        ports:
+        - containerPort: 8080
