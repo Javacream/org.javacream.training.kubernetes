@@ -25,6 +25,11 @@
 * Kubernetes startet automatisch -> Check Dateien
 * Löschen eines Containers (nginx) -> Kubernetes erzeugt und startet neuen -> Dateien sind immer noch da
 
+## Persitence Volume
+
+* kubectl apply -f one_gig_local.yml
+* kubectl apply -f app.yml
+
 
 ## check
 /data exists and is empty
