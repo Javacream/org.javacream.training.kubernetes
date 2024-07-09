@@ -4,7 +4,7 @@ metadata:
   name: nginx-service
 spec:
   selector:
-    app: web-server 
+    app: web-server
   type: LoadBalancer
   ports:
 
