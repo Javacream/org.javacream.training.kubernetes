@@ -8,10 +8,10 @@ spec:
   rules:
     - http:
         paths:
-          - path: /app
+          - path: /home
             pathType: Prefix
             backend:
               service:
                 name: nginx-service
                 port:
-                  number: 8080
+                  number: 30001
