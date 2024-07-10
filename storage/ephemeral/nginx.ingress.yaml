@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: git-sync
+  annotations:
+    traefik.ingress.kubernetes.io/router.entrypoints: web
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /sidecar
+            pathType: Prefix
+            backend:
+              service:
+                name: git-sync-service
+                port:
+                  number: 8081
