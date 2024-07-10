@@ -1,0 +1,31 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata: 
+  name: books
+spec:
+  replicas: 2
+  selector:
+    matchLabels: 
+      app: books-service
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  template:
+    metadata: 
+      name: books
+      labels:
+        app: books-service
+    spec:
+      containers:
+        - name: books
+          image: javacream/restserver:books
+          resources:
+            limits:
+              memory: "500Mi"
+              cpu: "1"
+            requests:  
+              memory: "300"
+              cpu: "1"
+

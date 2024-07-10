@@ -1,0 +1,15 @@
+kind: Pod
+apiVersion: v1
+metadata: 
+  name: books-service
+spec:
+  containers:
+    - name: books
+      image: javacream/restserver:books
+      resources:
+        limits:
+          memory: "500Mi"
+          cpu: "1"
+        requests:  
+          memory: "300Mi"
+          cpu: "1"
