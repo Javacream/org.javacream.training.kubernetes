@@ -1,0 +1,26 @@
+kind: Pod
+apiVersion: v1
+metadata: 
+  name: nginx-config
+spec:
+  volumes:
+      - name: config
+        configMap:
+          name: simple
+  containers:
+    - name: nginx-container
+      image: nginx
+      env:
+        - name: FIRST
+          valueFrom:
+            configMapKeyRef:
+              name: simple
+              key: firstname
+        - name: LAST
+          valueFrom:
+            configMapKeyRef:
+              name: simple
+              key: lastname
+      volumeMounts:
+        - name: config
+          mountPath: /config
