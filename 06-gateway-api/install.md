@@ -3,6 +3,7 @@
     kubectl get gc
     
 * Install
+    
     kubectl kustomize \
   "https://github.com/nginx/nginx-gateway-fabric/config/crd/gateway-api/standard?ref=v2.3.0" \
   | kubectl apply -f -
