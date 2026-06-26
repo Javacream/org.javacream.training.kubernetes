@@ -5,7 +5,7 @@ metadata:
 spec:
   replicas: 3
   selector:
-    matchLabels:
+    matchSelector:
       app: hello-world
   revisionHistoryLimit: 5
   progressDeadlineSeconds: 300

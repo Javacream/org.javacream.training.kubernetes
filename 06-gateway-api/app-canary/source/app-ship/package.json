@@ -1,0 +1,13 @@
+{
+  "name": "apple-containers-app",
+  "version": "1.0.0",
+  "description": "Learning Apple Containers with Node.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "sharp": "^0.34.5"
+  }
+}

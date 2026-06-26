@@ -1,0 +1,70 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: current
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: badge-lions
+  template:
+    metadata:
+      labels:
+        app: badge-lions
+    spec:
+      containers:
+      - name: web-pod
+        image: nigelpoulton/k8sbook:gtw-lion
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-current
+spec:
+  type: ClusterIP
+  selector:
+    app: badge-lions
+  ports:
+    - name: httpd
+      port: 8080
+      targetPort: 8080
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: previous
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: badge-ship
+  template:
+    metadata:
+      labels:
+        app: badge-ship
+    spec:
+      containers:
+      - name: web-pod
+        image: nigelpoulton/k8sbook:gtw-ship
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-previous
+spec:
+  type: ClusterIP
+  selector:
+    app: badge-ship
+  ports:
+    - name: httpd
+      port: 8080
+      targetPort: 8080
+
+

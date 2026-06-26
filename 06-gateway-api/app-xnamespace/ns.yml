@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ns-infra
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ns-shield
+  labels:
+    gtw-prod-6: "yes"
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ns-hydra
+  labels:
+    gtw-prod-6: "yes"

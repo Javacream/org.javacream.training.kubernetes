@@ -1,0 +1,12 @@
+{
+  "name": "safc-badge-app",
+  "version": "1.0.0",
+  "description": "Node.js app showing SAFC's current badge",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

@@ -1,0 +1,21 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  name: route-canary
+spec:
+  parentRefs:
+  - name: gtw-prod-1
+    sectionName: list-safc
+  rules:
+  - matches:
+    - path:
+        type: PathPrefix
+        value: /
+    backendRefs:
+    - name: svc-current
+      port: 8080
+      weight: 80
+    - name: svc-previous
+      port: 8080
+      weight: 20
+
