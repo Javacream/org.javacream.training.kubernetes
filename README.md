@@ -11,7 +11,7 @@
     * 9:00-9:15 "Warm Up", Umgebung Vorbereiten, Agenda des Seminartags
     * 15:45-16:15 "Cool Down", Zusammenfassung, Behandlung offener Punkte und Fertigstellen der Übungen
   * Freitag
-    * 8:30 - 15:30
+    * 8:30 - 15:15
     * Kaffeepausen 10:15 - 10:30
     * Mittagspause 45’ 12:00-12:50
     * Abschluss mit Diskussion, Fragerunde etwa ab 14:45
