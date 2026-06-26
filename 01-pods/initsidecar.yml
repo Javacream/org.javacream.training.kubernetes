@@ -21,6 +21,8 @@ spec:
       value: "1"
     - name: GIT_SYNC_DEST
       value: "html"
+    - name: GIT_SSL_NO_VERIFY
+      value: "true"
   containers:
   - name: ctr-web
     image: nginx
